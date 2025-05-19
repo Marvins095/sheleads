@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    -ms-wrap-margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.ddd{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+    height: 500px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .ddd{
+        flex-direction: column;
+        height: 500px;       
+    }
+    
+    .mmm{
+        flex-direction: column;
+    }
+
+    .carousel-inner{
+       flex-direction: column;
+    }
+    .ttt{
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ddd{
+        flex-wrap: wrap;        
+    }
+    .carousel-inner{
+        flex-direction: column;
+    }
+    .ttt{
+        flex-wrap: wrap;
+    }
+}
